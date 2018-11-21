@@ -21,7 +21,7 @@
     - restart ipsec exporter
 
 - name: rename executable to omit version
-  command: mv "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_ipsec_exporter_release_name }}/ipsec-prom" "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_ipsec_exporter_release_name }}/ipsec_exporter"
+  command: mv "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_ipsec_exporter_release_name }}/ipsec_exporter" "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_ipsec_exporter_release_name }}/ipsec_exporter"
 
 - name: update group and owner for files
   file:

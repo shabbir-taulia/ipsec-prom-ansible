@@ -1,9 +1,9 @@
 ---
 
-prometheus_ipsec_exporter_version: 0.2
+prometheus_ipsec_exporter_version: 0.1
 
-prometheus_ipsec_exporter_release_name: "ipsec-prom_{{ prometheus_ipsec_exporter_version }}_linux_amd64"
-prometheus_ipsec_exporter_url: "https://github.com/shabbir-taulia/ipsec-prom/releases/download/v{{ prometheus_ipsec_exporter_version }}/{{ prometheus_ipsec_exporter_release_name }}.tar.gz"
+prometheus_ipsec_exporter_release_name: "ipsec_prometheus_{{ prometheus_ipsec_exporter_version }}_Linux_x86_64"
+prometheus_ipsec_exporter_url: "https://github.com/shabbir-taulia/ipsec_prometheus/releases/download/v{{ prometheus_ipsec_exporter_version }}/{{ prometheus_ipsec_exporter_release_name }}.tar.gz"
 
 prometheus_ipsec_exporter_config_flags:
   'web.listen-address': '9101'

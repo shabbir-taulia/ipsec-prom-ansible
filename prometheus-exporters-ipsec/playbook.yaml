@@ -1,7 +1,7 @@
-- hosts: nodes
+- hosts: 10.143.16.57 
   roles:
     - role: "{{ playbook_dir }}/roles/"
-      prometheus_ipsec_exporter_version: 0.2
+      prometheus_ipsec_exporter_version: 0.1
       prometheus_ipsec_exporter_config_flags:
         'web.listen-address': '9101'
         'collector.ipsec.conf': '/etc/ipsec.d/openshift-cluster.conf'
